@@ -12,8 +12,8 @@
 #>
 param(
   [string]$Godot = "$env:LOCALAPPDATA\Programs\Godot\Godot_v4.7.2-stable_win64_console.exe",
-  [string]$Keystore = "$env:USERPROFILE\keys\defensa-escom-upload.jks",
-  [string]$Alias = "upload",
+  [string]$Keystore = "$env:USERPROFILE\.android\keystores\defensa-escom-upload.jks",
+  [string]$Alias = "upload-defensa-escom",
   [string]$Output = ""
 )
 
