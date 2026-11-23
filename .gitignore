@@ -9,10 +9,15 @@ export_credentials.cfg
 *.tmp
 
 # Exported builds and signing keys (never commit keystores)
+# The upload key and its backup live outside the repo:
+# %USERPROFILE%\.android\keystores and Documentos\Respaldo firmas Android
 *.apk
 *.aab
 *.keystore
 *.jks
+*.p12
+*.pepk
+keystore.properties
 
 # OS files
 .DS_Store
