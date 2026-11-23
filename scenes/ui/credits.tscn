@@ -95,10 +95,21 @@ Los profesores del juego son arquetipos ficticios."
 horizontal_alignment = 1
 autowrap_mode = 3
 
-[node name="BackButton" type="Button" parent="Center/Panel/Content"]
-unique_name_in_owner = true
-custom_minimum_size = Vector2(320, 64)
+[node name="Buttons" type="HBoxContainer" parent="Center/Panel/Content"]
 layout_mode = 2
-size_flags_horizontal = 4
+theme_override_constants/separation = 16
+alignment = 1
+
+[node name="PrivacyButton" type="Button" parent="Center/Panel/Content/Buttons"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(300, 64)
+layout_mode = 2
+focus_mode = 0
+text = "Política de privacidad"
+
+[node name="BackButton" type="Button" parent="Center/Panel/Content/Buttons"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(300, 64)
+layout_mode = 2
 focus_mode = 0
 text = "Volver"
